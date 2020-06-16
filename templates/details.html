@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+DETAILS
+{% endblock title %}
+
+{% block header %}
+<h1>Welcome to Peng's jokes collections</h1>
+{% endblock header %}
+
+{% block content %}
+<h2>Hope you love this joke </h1>
+<h3>{{ object.title }}</h3>
+<p>{{ object.body }}</p>
+
+{% endblock content%}
