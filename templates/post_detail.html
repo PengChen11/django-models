@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+DETAILS
+{% endblock title %}
+
+{% block content %}
+<h1>this is post details!! </h1>
+<ul>
+  {% for post in object_list %}
+    <li>
+      Post title is {{ post.title }} <br>
+      {{post.body}}
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock content%}
