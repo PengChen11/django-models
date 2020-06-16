@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-HOME
+DETAILS
 {% endblock title %}
 
 {% block header %}
@@ -9,12 +9,8 @@ HOME
 {% endblock header %}
 
 {% block content %}
-<h2>Here's today's jokes:  </h2>
-<ul>
-  {% for post in object_list %}
-    <li>
-      <a href="{% url 'details' post.pk %}"> {{ post.title }}</a> <br>
-    </li>
-  {% endfor %}
-</ul>
+<h2>Hope you love this joke </h1>
+<h3>{{ object.title }}</h3>
+<p>{{ object.body }}</p>
+
 {% endblock content%}
