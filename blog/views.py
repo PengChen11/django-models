@@ -10,6 +10,6 @@ class ListView(ListView):
     template_name = 'post_detail.html'
     model = Post
 
-class ListView(DetailView):
-    template_name = 'post_detail.html'
-    model = Post
+# class ListView(DetailView):
+#     template_name = 'post_detail.html'
+#     model = Post
